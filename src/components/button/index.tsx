@@ -18,7 +18,7 @@ export const Button = (props: ButtonProps) => {
 
   const variantClass = () => {
     if (variant === "primary") {
-      return "text-foreground bg-primary100 hover:bg-primary100/80 focus:outline-primary-100";
+      return "text-background bg-primary100 hover:bg-primary100/80 focus:outline-primary-100";
     } else if (variant === "secondary") {
       return "text-white bg-primary200 hover:bg-primary200/80 focus:outline-primary200";
     } else if (variant === "neutral") {
@@ -50,7 +50,7 @@ export const Button = (props: ButtonProps) => {
       onClick={onClick}
       disabled={isLoading || disabled}
       className={clsx(
-        "transition-all duration-300 ease-in-out  focus:outline- font-medium  text-sm text-center flex items-center focus:outline-offset-2",
+        "transition-all duration-300 ease-in-out  lg:focus:outline-2 font-medium  text-sm text-center flex items-center focus:outline-offset-2",
         justifyContent,
         radius,
         variantClass(),

@@ -17,41 +17,48 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="bg-primary100 flex items-center justify-between">
+    <header className="bg-primary100 w-full flex items-center justify-between">
       <div className="flex items-center gap-2 px-4 py-3">
-        <Image alt="logo" src="/images/logo2.png" width={145} height={82} />
+        <Image
+          alt="logo"
+          src="/images/logo2.png"
+          width={145}
+          height={82}
+          className="w-auto h-12 sm:h-16 md:h-20"
+        />
       </div>
       {/* Mobile devices */}
-      <div className="flex items-center gap-4 lg:hidden md:hidden">
+      <div className="flex items-center gap-4 lg:hidden">
         <Button variant="transparent" onClick={toggleNav}>
           <RiMenu4Line className="text-3xl text-background" />
         </Button>
       </div>
 
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex items-center justify-between">
+      <nav className="hidden lg:flex items-center justify-between">
         <ul className="flex items-center gap-8">
           {navItems.map((item: NavItem, index: number) => (
             <NavBarItem key={index} item={item} onClick={() => toggleNav()} />
           ))}
+
+          <div className="hidden xl:flex items-center gap-5 px-4 py-3">
+            <Button
+              variant="neutral"
+              className="hidden w-28 text-[17px] md:block cursor-pointer"
+            >
+              Kirish
+            </Button>
+
+            <Button
+              variant="secondary"
+              size="lg"
+              className="hidden text-[17px] md:block cursor-pointer whitespace-nowrap"
+            >
+              Ro&apos;yxatdan o&apos;tish
+            </Button>
+          </div>
         </ul>
       </nav>
-
-      <div className="hidden md:flex items-center gap-5 px-4 py-3">
-        <Button
-          variant="neutral"
-          className="hidden w-28 text-[17px] rounded-2xl md:block cursor-pointer"
-        >
-          Kirish
-        </Button>
-
-        <Button
-          variant="secondary"
-          className="hidden text-[17px] rounded-2xl md:block cursor-pointer"
-        >
-          Ro&apos;yxatdan o&apos;tish
-        </Button>
-      </div>
 
       {/* Mobile Navbar */}
       <div
@@ -73,17 +80,19 @@ export const Navbar = () => {
             {navItems.map((item: NavItem, index: number) => (
               <NavBarItem key={index} item={item} onClick={() => toggleNav()} />
             ))}
+
+            <hr className="h-[1px] bg-primary200" />
             <div className="flex flex-col items-start gap-5">
               <Button
                 variant="neutral"
-                className="w-28 text-[16px] rounded-2xl block md:block"
+                className="w-full text-[16px] rounded-2xl block md:block"
               >
                 Kirish
               </Button>
 
               <Button
                 variant="secondary"
-                className="text-[14px] rounded-2xl block md:block"
+                className="w-full text-[14px] rounded-2xl block md:block"
               >
                 Ro&apos;yxatdan o&apos;tish
               </Button>
