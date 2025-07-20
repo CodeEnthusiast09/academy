@@ -5,14 +5,13 @@ const CategoryCard = ({ image, title, users, time }: CategoryCardProps) => {
   return (
     <div className="relative w-full max-w-96 xl:max-w-[500px] 2xl:max-w-[650px] bg-white rounded-xl shadow-xl pt-12 flex flex-col items-center border-t-2">
       {/* Circular Image - Overlapping Top */}
-      <div className="absolute -top-28">
-        <div className="rounded-full overflow-hidden shadow-md">
+      <div className="absolute -top-18 md:-top-20 lg:-top-25">
+        <div className="w-[125px] h-[125px] md:w-[150px] md:h-[150px] xl:w-[170px] xl:h-[170px] rounded-full overflow-hidden shadow-md">
           <Image
             src={image ?? "/images/default-image.png"}
             alt={title ?? "Category Image"}
-            width={250}
-            height={250}
-            className="object-cover"
+            fill
+            className="object-cover object-center"
             priority
           />
         </div>

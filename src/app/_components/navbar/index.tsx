@@ -21,7 +21,7 @@ export const Navbar = () => {
       <div className="flex items-center gap-2 px-4 py-3">
         <Image
           alt="logo"
-          src="/images/logo2.png"
+          src="/images/logo.png"
           width={145}
           height={82}
           className="w-auto h-12 sm:h-16 md:h-20"

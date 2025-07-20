@@ -1,5 +1,6 @@
 import { Button } from "@/components/button";
 import CategoryCard from "@/components/category-cards";
+import CourseCard from "@/components/courses-cards";
 import Image from "next/image";
 
 export default function Home() {
@@ -60,29 +61,26 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex flex-col lg:flex-row px-2.5 gap-24 lg:gap-14 items-center justify-center mb-16 lg:mb-40">
+          <div className="flex flex-col lg:flex-row px-2.5 gap-30 lg:gap-14 items-center justify-center mb-16 lg:mb-40">
             <CategoryCard
               image="/images/profile-picture.png"
               title="Muhammadali Eshonqulov darslari"
               users="2"
-              time="Umumiy 108
-          "
+              time="Umumiy 108"
             />
 
             <CategoryCard
               image="/images/biznes.png"
               title="Biznes Kvadrat darslari"
               users="3"
-              time="Umumiy 320 
-          "
+              time="Umumiy 320"
             />
 
             <CategoryCard
               image="/images/biznes2.png"
               title="Biznes Kvadrat ayollar"
               users="4"
-              time="Umumiy 172
-            "
+              time="Umumiy 172"
             />
           </div>
 
@@ -131,6 +129,44 @@ export default function Home() {
             />
           </div>
         </div>
+
+        <div className="mt-30 md:mt-40 flex flex-col lg:flex-row lg:flex-wrap 2xl:flex-nowrap px-2.5 gap-28 md:gap-44 lg:gap-x-14 items-center justify-center mb-16 lg:mb-40">
+          <CourseCard
+            image="/images/online-course12.png"
+            title="HTMLda Dasturlash"
+            tutor="Bakhtiyorov Doniyor"
+            graduates="302"
+            students="28"
+            price="450 000"
+          />
+
+          <CourseCard
+            image="/images/online-course12.png"
+            title="HTMLda Dasturlash"
+            tutor="Bakhtiyorov Doniyor"
+            graduates="302"
+            students="28"
+            price="450 000"
+          />
+
+          <CourseCard
+            image="/images/online-course12.png"
+            title="HTMLda Dasturlash"
+            tutor="Bakhtiyorov Doniyor"
+            graduates="302"
+            students="28"
+            price="450 000"
+          />
+
+          <CourseCard
+            image="/images/online-course12.png"
+            title="HTMLda Dasturlash"
+            tutor="Bakhtiyorov Doniyor"
+            graduates="302"
+            students="28"
+            price="450 000"
+          />
+        </div>
       </div>
 
       {/* Top Books Section*/}
@@ -138,6 +174,8 @@ export default function Home() {
         <h2 className="text-primary100 font-bold text-4xl lg:text-6xl 2xl:text-7xl pb-4 mb-40 lg:mb-40 border-b-2 border-primary200">
           Top 100 kitoblar
         </h2>
+
+        <div className="mt-7"></div>
       </div>
     </main>
   );
