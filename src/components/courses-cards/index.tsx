@@ -11,12 +11,12 @@ const CourseCard = ({
   price,
 }: CourseCardProps) => {
   return (
-    <div className="bg-secondary500/20 rounded-2xl shadow-md pt-20 md:pt-36 px-3 md:px-6 pb-2 relative w-full max-w-96 xl:max-w-[500px] 2xl:max-w-[650px]">
-      <div className="w-full absolute -top-18 -left-2 md:-top-28 lg:-top-30">
-        <div className="relative w-full h-[150px] md:h-[250px] rounded-2xl overflow-hidden">
+    <div className="bg-secondary500/20 rounded-2xl shadow-md pt-20 sm:pt-20 md:pt-24 lg:pt-28 xl:pt-36 px-3 sm:px-4 md:px-6 pb-3 md:pb-4 relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px] mx-auto">
+      <div className="w-full absolute -top-12 sm:-top-14 md:-top-16 lg:-top-18 xl:-top-20 left-1/2 transform -translate-x-1/2">
+        <div className="relative w-[90%] mx-auto h-[120px] sm:h-[140px] md:h-[160px] lg:h-[180px] xl:h-[200px] 2xl:h-[220px] rounded-2xl overflow-hidden">
           <Image
             src={image ?? "/images/default-image.png"}
-            alt={title ?? "Category Image"}
+            alt={title ?? "Course Image"}
             fill
             className="object-cover object-center"
             priority
@@ -24,46 +24,50 @@ const CourseCard = ({
         </div>
       </div>
 
-      <p className="text-secondary200 font-light text-sm md:text-lg">{title}</p>
-      <p className="text-secondary200 font-semibold text-sm md:text-lg">
-        {tutor}
-      </p>
+      <div className="space-y-1 md:space-y-2">
+        <p className="text-secondary200 font-light text-sm sm:text-base md:text-lg line-clamp-2">
+          {title}
+        </p>
+        <p className="text-secondary200 font-semibold text-sm sm:text-base md:text-lg line-clamp-1">
+          {tutor}
+        </p>
+      </div>
 
-      <div className="flex items-center gap-3 my-2  border-b-1 border-primary100 pb-2">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 sm:gap-3 md:gap-4 my-3 md:my-4 border-b border-primary100 pb-2 md:pb-3">
+        <div className="flex items-center gap-1 sm:gap-2">
           <Image
             src="/images/graduates.svg"
             alt="graduates"
-            width={10}
-            height={13}
-            className="w-2.5 h-3 md:w-5 md:h-6 lg:w-6 lg:h-7"
+            width={16}
+            height={16}
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5"
           />
-          <p className="text-secondary300 text-[10px] md:text-[16px]">
+          <p className="text-secondary300 text-[10px] sm:text-xs md:text-sm lg:text-base">
             {graduates}
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 sm:gap-2">
           <Image
             src="/images/user-reading.svg"
             alt="students"
-            width={14}
-            height={15.22}
-            className="w-3.5 h-4 md:w-6 md:h-7 lg:w-7 lg:h-8"
+            width={16}
+            height={16}
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5"
           />
-          <p className="text-secondary300 text-[10px] md:text-[16px]">
+          <p className="text-secondary300 text-[10px] sm:text-xs md:text-sm lg:text-base">
             {students} ta darslar
           </p>
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-5">
-        <p className="text-[14px] md:text-[20px] font-semibold text-primary100">
+      <div className="flex items-center justify-between gap-3 md:gap-5">
+        <p className="text-sm sm:text-base md:text-base lg:text-xl font-semibold text-primary100">
           {price} UZS
         </p>
         <Button
           variant="primary"
           radius="rounded-md"
-          className="text-xs md:text-lg"
+          className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 whitespace-nowrap"
         >
           Xarid qilish
         </Button>
