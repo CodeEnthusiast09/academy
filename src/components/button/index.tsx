@@ -26,7 +26,7 @@ export const Button = (props: ButtonProps) => {
     } else if (variant === "danger") {
       return "text-white bg-[#FB0E0E] hover:bg-[#FB0E0E]/80 focus:outline-[#F44616]";
     } else if (variant === "transparent") {
-      return "borde border-slate-300 bg-disabled-100";
+      return "border border-white-300 bg-disabled-100";
     } else {
       return "text-dark bg-white hover:bg-primary-100 border border-[#D1D1D1]";
     }

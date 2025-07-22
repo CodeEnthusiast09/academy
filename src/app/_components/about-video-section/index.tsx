@@ -9,7 +9,7 @@ const AboutSection = () => {
         <span className="text-">(platforma haqida)</span>
       </h2>
 
-      <div className="flex flex-col xl:flex-row items-center justify-between 2xl:justify-cente gap-5 2xl:gap40 mt-14">
+      <div className="flex flex-col xl:flex-row items-center justify-between gap-5 mt-14">
         <div className="max-w-[700px] 2xl:max-w-[1500px] relative">
           <div className="absolute -left-[4%] md:-left-3 xl:-left-[3%] 2xl:-left-5 -top-[2.5%] md:-top-[3%] xl:-top-[7%] w-[42px] h-[42px] md:w-[49px] md:h-[49px] lg:w-[56px] lg:h-[56px] xl:w-[66px] xl:h-[66px] 2xl:w-[75px] 2xl:h-[75px] bg-secondary600 rounded-full -z-1"></div>
 
