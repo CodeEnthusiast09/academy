@@ -96,11 +96,11 @@ const BookSection = () => {
   ];
 
   return (
-    <section className="mt-12 px-5 md:px-10 lg:px-20 xl:px-24 2xl:px-32 relative">
+    <div className="mt-12 px-5 md:px-10 lg:px-20 relative">
       {/* Header Section */}
       <div className="relative pb-4 mb-10 lg:mb-10 border-b-2 border-primary200">
         <div className="flex items-center justify-between">
-          <h2 className="text-primary100 font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+          <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
             Top 100 kitoblar
           </h2>
 
@@ -228,7 +228,7 @@ const BookSection = () => {
           priority
         />
       </div>
-    </section>
+    </div>
   );
 };
 

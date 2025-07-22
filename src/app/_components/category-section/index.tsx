@@ -5,7 +5,7 @@ import React from "react";
 const CategorySection = () => {
   return (
     <div className="mt-7 px-5 md:px-10 lg:px-20">
-      <h2 className="text-primary100 font-bold text-4xl lg:text-6xl 2xl:text-7xl pb-4 mb-40 lg:mb-40 border-b-2 border-secondary400">
+      <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl pb-4 mb-40 lg:mb-40 border-b-2 border-secondary400">
         Kategoriya
       </h2>
       <div className="relative">
