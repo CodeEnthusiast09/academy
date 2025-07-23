@@ -3,7 +3,7 @@ import { CategoryCardProps } from "./types";
 
 const CategoryCard = ({ image, title, users, time }: CategoryCardProps) => {
   return (
-    <div className="relative w-full max-w-96 xl:max-w-[500px] 2xl:max-w-[650px] bg-white rounded-xl shadow-xl pt-12 flex flex-col items-center border-t-2">
+    <div className="relative w-full max-w-96 xl:max-w-[500px] 2xl:max-w-[650px] bg-white rounded-xl shadow-xl pt-12 flex flex-col items-center">
       {/* Circular Image - Overlapping Top */}
       <div className="absolute -top-18 md:-top-20 lg:-top-25">
         <div className="w-[125px] h-[125px] md:w-[150px] md:h-[150px] xl:w-[170px] xl:h-[170px] rounded-full overflow-hidden shadow-md">

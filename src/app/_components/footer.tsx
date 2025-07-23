@@ -1,96 +1,100 @@
+import Image from "next/image";
 import React from "react";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaXTwitter,
-  FaLinkedin,
-} from "react-icons/fa6";
+import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const navLinks = {
-    Donate: ["Education", "Social", "Medicine", "Disaster"],
-    Help: ["FAQ", "Privacy Policy", "Accessibility", "Contact Us"],
-    Company: ["About Us", "Careers", "Services", "Pricing"],
+    "Veb sayt": ["Bosh sahifa", "Kurslar"],
+    "Ma’lumotlar": [
+      "Biz haqimizda",
+      "Foydalanish shartlari",
+      "Xavfsizlik siyosati",
+    ],
+    Manzil: [
+      "Toshkent sh. Yakkasaroy t. Shota Rustaveli 1-tor ko'chasi, 6-uy",
+      "info@Aliacademy.uz",
+    ],
   };
 
   return (
-    <footer className="bg-[#252641] text-white px-4 py-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Top section with logo and navigation */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          {/* Logo and tagline section */}
-          <div className="flex justify-between items-center gap-5 lg:flex-col md:block md:justify-normal lg:justify-normal">
-            <div className="flex items-center">
-              <span className="text-[#9FE870] text-2xl">✱</span>
-              <span className="text-xl font-semibold">fundlyNest</span>
-            </div>
-            <p className="text-sm text-gray-300 leading-tight">
-              Nest Your Ideas, Fund Your Future
-            </p>
-          </div>
+    // <footer className="relative bg-[#252641] text-white h-[720px] md:h-[560px] px-6 py-12 mt-5">
+    <footer className="relative bg-[#252641] text-white h-[720px] md:h-[560px] px-6 mt-5 flex items-center justify-center">
+      {/* Top right vector */}
+      <div className="absolute top-0 right-0 hidden md:block">
+        <Image
+          alt="vector top"
+          src="/images/white-design-up.png"
+          width={257}
+          height={104}
+          priority
+        />
+      </div>
 
-          {/* Navigation sections */}
-          <div className="flex justify-between">
-            {Object.entries(navLinks).map(([title, links]) => (
-              <div key={title}>
-                <h3 className="font-medium mb-4">{title}</h3>
-                <ul className="space-y-2">
-                  {links.map((link) => (
-                    <li key={link}>
-                      <a
-                        href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="text-sm text-gray-300 hover:text-white transition-colors"
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* Bottom left vector */}
+      <div className="absolute bottom-0 left-0 hidden md:block">
+        <Image
+          alt="vector bottom"
+          src="/images/white-design-down.png"
+          width={257}
+          height={104}
+          priority
+        />
+      </div>
 
-        {/* Bottom section with copyright and social links */}
-        <div className="pt-8 border-t border-gray-800 flex lg:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-gray-300">
-            © Fundtic 2023
-            <br className="sm:hidden" />
-            <span className="hidden sm:inline"> - </span>All Rights Reserved.
-          </div>
-
-          {/* Social media links */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        {/* Logo + Social Icons */}
+        <div className="flex flex-col items-center md:items-start gap-6">
+          <Image
+            alt="logo"
+            src="/images/logo.png"
+            width={151}
+            height={97}
+            priority
+          />
           <div className="flex gap-4">
             <a
               href="#instagram"
-              className="hover:text-[#9FE870] transition-colors flex gap-3 items-center"
+              className="hover:text-primary100 transition-colors"
             >
               <FaInstagram size={25} />
-              <span className="hidden lg:block">Instagram</span>
             </a>
             <a
               href="#facebook"
-              className="hover:text-[#9FE870] transition-colors flex gap-3 items-center"
+              className="hover:text-primary100 transition-colors"
             >
               <FaFacebook size={25} />
-              <span className="hidden lg:block">Facebook</span>
             </a>
             <a
               href="#twitter"
-              className="hover:text-[#9FE870] transition-colors flex gap-3 items-center"
+              className="hover:text-primary100 transition-colors"
             >
               <FaXTwitter size={25} />
-              <span className="hidden lg:block">Twitter</span>
-            </a>
-            <a
-              href="#linkedin"
-              className="hover:text-[#9FE870] transition-colors flex gap-3 items-center"
-            >
-              <FaLinkedin size={25} />
-              <span className="hidden lg:block">LinkedIn</span>
             </a>
           </div>
         </div>
+
+        {/* Navigation Columns */}
+        {Object.entries(navLinks).map(([title, links]) => (
+          <div key={title}>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4">{title}</h3>
+            <ul className="space-y-2">
+              {links.map((link, idx) => (
+                <li key={idx}>
+                  {title !== "Manzil" ? (
+                    <a
+                      href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                    >
+                      {link}
+                    </a>
+                  ) : (
+                    <p className="text-sm text-gray-300">{link}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </footer>
   );

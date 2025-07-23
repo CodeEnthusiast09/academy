@@ -11,7 +11,7 @@ const PartnersSection = () => {
   ];
 
   return (
-    <div className="my-30 px-5 md:px-10 lg:px-20 relative">
+    <div className="mt-30 mb-40 md:mb-32 px-5 md:px-10 lg:px-20 relative">
       <div className="absolute sm:left-2 md:left-7 lg:left-5 -top-40 -z-5">
         <Image
           alt="vector 3"
@@ -96,10 +96,32 @@ const PartnersSection = () => {
         />
       </div>
 
-      <div className="absolute -right-5 sm:right-2 md:-right-7 lg:-right-5 -bottom-28 sm:bottom-4 md:-bottom-24 lg:-bottom-30">
+      <div className="absolute -right-10 sm:right-2 md:-right-12 -bottom-28 sm:bottom-4 md:-bottom-24 lg:-bottom-30">
         <Image
           alt="vector 3"
-          src={"/images/purpleEllipseFull.svg"}
+          src={"/images/deep-purple-ellipse.svg"}
+          width={60}
+          height={60}
+          priority
+          className="md:w-20 md:h-24"
+        />
+      </div>
+
+      <div className="absolute left-40 sm:left-10 md:left-72 -bottom-[170px] -z-5">
+        <Image
+          alt="vector 3"
+          src={"/images/goldEllipse.svg"}
+          width={60}
+          height={60}
+          priority
+          className="md:w-16 md:h-16"
+        />
+      </div>
+
+      <div className="absolute -left-6 sm:left-2 md:-left-12 -bottom-[190px] sm:bottom-4 md:-bottom-44">
+        <Image
+          alt="vector 3"
+          src={"/images/deep-purple-ellipse.svg"}
           width={60}
           height={60}
           priority

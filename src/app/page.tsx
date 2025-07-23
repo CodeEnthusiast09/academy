@@ -10,7 +10,7 @@ import Footer from "./_components/footer";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-x-hidden">
       <HeroSection />
 
       <div className="w-full h-7 bg-primary100"></div>
