@@ -29,7 +29,7 @@ export const Navbar = () => {
       </div>
       {/* Mobile devices */}
       <div className="flex items-center gap-4 lg:hidden">
-        <Button variant="transparent" onClick={toggleNav}>
+        <Button variant="mobile-nav" onClick={toggleNav}>
           <RiMenu4Line className="text-3xl text-background" />
         </Button>
       </div>
@@ -69,7 +69,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between pb-6">
           <Button
             onClick={toggleNav}
-            variant="transparent"
+            variant="mobile-nav"
             className="bg-transparent hover:bg-transparent"
           >
             <FaTimes className="text-background text-2xl absolute right-4" />

@@ -4,7 +4,7 @@ import React from "react";
 
 const WhySection = () => {
   return (
-    <div className="my-30 px-5 md:px-10 lg:px-20 relative">
+    <div className="mt-30 mb-40 px-5 md:px-10 lg:px-20 relative">
       <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl pb-4 border-b-2 border-primary200">
         Nega aynan Ali Academy?
       </h2>
@@ -17,12 +17,12 @@ const WhySection = () => {
           provide students with feedback all in one place.
         </p>
 
-        <div className="absolute right-40 md:-right-10 top-20">
+        <div className="absolute right-40 md:-right-30 xl:-right-14 top-16 xl:top-8">
           <Image
             alt="vector 2"
-            src={"/images/orange-design.png"}
-            width={180}
-            height={73}
+            src={"/images/orange-design.svg"}
+            width={257}
+            height={104}
             className="hidden md:block"
             priority
           />
@@ -126,12 +126,12 @@ const WhySection = () => {
           </div>
         </div>
 
-        <div className="absolute -left-20 md:-left-10 -bottom-28">
+        <div className="absolute -left-20 md:-left-10 -bottom-40">
           <Image
             alt="vector 2"
-            src={"/images/purple-design.png"}
-            width={180}
-            height={73}
+            src={"/images/purple-design.svg"}
+            width={257}
+            height={104}
             priority
           />
         </div>

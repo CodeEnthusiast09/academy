@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-white px-4 py-8 rounded-3xl m-5 lg:m-9">
+    <footer className="bg-[#252641] text-white px-4 py-8">
       <div className="max-w-7xl mx-auto">
         {/* Top section with logo and navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

@@ -209,7 +209,7 @@ const BookSection = () => {
         }
       `}</style>
 
-      <div className="absolute -left-20 md:left-0 -bottom-24">
+      <div className="absolute -left-20 md:left-0 -bottom-28">
         <Image
           alt="vector 2"
           src={"/images/orange2-design.svg"}
@@ -219,7 +219,7 @@ const BookSection = () => {
         />
       </div>
 
-      <div className="absolute -right-20 md:right-0 -bottom-24">
+      <div className="absolute -right-20 md:right-0 -bottom-32">
         <Image
           alt="vector 2"
           src={"/images/design-purple-upside.png"}

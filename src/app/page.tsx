@@ -4,6 +4,9 @@ import CourseSection from "./_components/courses-section";
 import BookSection from "./_components/books-section";
 import AboutSection from "./_components/about-video-section";
 import WhySection from "./_components/why-section";
+import ContactSection from "./_components/contact-section";
+import PartnersSection from "./_components/partners-section";
+import Footer from "./_components/footer";
 
 export default function Home() {
   return (
@@ -21,6 +24,12 @@ export default function Home() {
       <AboutSection />
 
       <WhySection />
+
+      <ContactSection />
+
+      <PartnersSection />
+
+      <Footer />
     </main>
   );
 }
