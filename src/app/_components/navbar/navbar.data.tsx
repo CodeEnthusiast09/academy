@@ -7,18 +7,18 @@ export const navItems: NavItem[] = [
   },
   {
     name: "Kurslar",
-    href: "/kurslar",
+    href: "/#kurslar",
   },
   {
     name: "Kitoblar",
-    href: "/litoblar",
+    href: "/#litoblar",
   },
   {
     name: "Paketlar",
-    href: "/paketlar",
+    href: "/#paketlar",
   },
   {
     name: "O’qituvchilar",
-    href: "/o-qituvchilar",
+    href: "/#o-qituvchilar",
   },
 ];
