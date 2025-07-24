@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="my-30 px-5 md:px-10 lg:px-20 relative">
+    <section className="my-30 px-5 md:px-10 lg:px-20 relative">
       <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl pb-4 border-b-2 border-primary200">
         Video&nbsp;
         <span className="text-">(platforma haqida)</span>
@@ -126,7 +126,7 @@ const AboutSection = () => {
           className="md:w-20 md:h-24"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -11,7 +11,7 @@ const PartnersSection = () => {
   ];
 
   return (
-    <div className="mt-30 mb-40 md:mb-32 px-5 md:px-10 lg:px-20 relative">
+    <section className="mt-30 mb-40 md:mb-32 px-5 md:px-10 lg:px-20 relative">
       <div className="absolute sm:left-2 md:left-7 lg:left-5 -top-40 -z-5">
         <Image
           alt="vector 3"
@@ -161,7 +161,7 @@ const PartnersSection = () => {
           animation-play-state: paused;
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

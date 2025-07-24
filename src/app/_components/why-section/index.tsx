@@ -4,7 +4,7 @@ import React from "react";
 
 const WhySection = () => {
   return (
-    <div className="mt-30 mb-40 px-5 md:px-10 lg:px-20 relative">
+    <section className="mt-30 mb-40 px-5 md:px-10 lg:px-20 relative">
       <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl pb-4 border-b-2 border-primary200">
         Nega aynan Ali Academy?
       </h2>
@@ -146,7 +146,7 @@ const WhySection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

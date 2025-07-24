@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center gap-5">
+    <section className="w-full flex flex-col md:flex-row items-center gap-5">
       <div className="flex flex-col items-center gap-5">
         <h1 className="min-[320px]:text-[24px] sm:text-3xl min-[380px]:text-[36px] max-[767px]:text-[36px] md:text-4xl xl:text-7xl 2xl:text-8xl text-center italic text-primary300 pt-5 md:pt-0 2xl:pl-5">
           Foydali ilmga tikilgan sarmoya,
@@ -38,7 +38,7 @@ const HeroSection = () => {
           className="md:absolute object-contain object-bottom md:object-right-bottom"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

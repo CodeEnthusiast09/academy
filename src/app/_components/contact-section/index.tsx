@@ -4,7 +4,7 @@ import Form from "./form";
 
 const ContactSection = () => {
   return (
-    <div className="relative w-full h-[950px] md:h-[700px] overflow-hidden">
+    <section className="relative w-full h-[950px] md:h-[700px] overflow-hidden">
       <Image
         src="/images/form-background.png"
         fill
@@ -41,7 +41,7 @@ const ContactSection = () => {
           className="md:w-24 md:h-w-24"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
