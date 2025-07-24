@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 type NavBarItemProps = {
   item: NavItem;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   onClick: Function;
 };
 

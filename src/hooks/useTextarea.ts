@@ -6,6 +6,7 @@ export const useTextarea = ({
   defaultValue,
   onChange,
 }: {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   onChange?: Function;
   defaultValue?: string | number | readonly string[] | undefined;
 }) => {
@@ -20,6 +21,7 @@ export const useTextarea = ({
         if (form) {
           const submitButton = form.querySelector('button[type="submit"]');
           if (submitButton) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             submitButton.click();
           }
@@ -32,6 +34,7 @@ export const useTextarea = ({
     if (defaultValue && onChange) {
       onChange({
         target: {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           value: defaultValue,
         },

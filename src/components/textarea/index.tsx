@@ -18,9 +18,11 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
       value,
       onChange,
       showRequiredAsterik = false,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       triggerSubmitOnPressEnter = false,
       ...rest
     },
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     _ref
   ) => {
     const { ref, handleTextareaKeyDown } = useTextarea({
