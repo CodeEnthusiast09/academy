@@ -96,7 +96,7 @@ const BookSection = () => {
   ];
 
   return (
-    <section className="mt-12 px-5 md:px-10 lg:px-20 relative">
+    <section id="kitoblar" className="mt-12 px-5 md:px-10 lg:px-20 relative">
       {/* Header Section */}
       <div className="relative pb-4 mb-10 lg:mb-10 border-b-2 border-primary200">
         <div className="flex items-center justify-between">

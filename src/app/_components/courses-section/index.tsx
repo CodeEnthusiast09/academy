@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CourseSection = () => {
   return (
-    <section className="mt-28 sm:mt-20 md:mt-24 lg:mt-32 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative">
+    <section id="kurslar" className="mt-28 sm:mt-20 md:mt-24 lg:mt-32 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 relative">
       <div className="flex items-end justify-between relative">
         <div className="w-full flex flex-col">
           <h2 className="text-primary100 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl pb-2 sm:pb-3 md:pb-4">

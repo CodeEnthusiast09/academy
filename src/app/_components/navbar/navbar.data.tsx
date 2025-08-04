@@ -11,7 +11,7 @@ export const navItems: NavItem[] = [
   },
   {
     name: "Kitoblar",
-    href: "/#litoblar",
+    href: "/#kitoblar",
   },
   {
     name: "Paketlar",
