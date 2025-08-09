@@ -62,7 +62,7 @@ export const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div
-        className={`px-5 xl:px-6 py-6 h-screen overflow-auto w-1/2 md:w-[40vw] lg:w-[25vw] 2xl:w-[18vw] bg-primary100 border-l border-l-primary200 z-20 fixed lg:right-0 transition-all duration-500 top-0 ${
+        className={`px-5 xl:px-6 py-6 h-screen overflow-auto w-1/2 md:w-[40vw] lg:w-[25vw] 2xl:w-[18vw] bg-primary100 border-l border-l-primary200 z-50 fixed lg:right-0 transition-all duration-500 top-0 ${
           showNav ? "right-0" : " -right-[150vw]"
         } lg:hidden`}
       >
